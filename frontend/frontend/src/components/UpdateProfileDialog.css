@@ -1,0 +1,25 @@
+/* UpdateProfileDialog.css */
+
+/* Ensures DialogContent appears as a modal */
+.dialog-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Ensure it appears above other content */
+    background: white; /* Background color */
+    padding: 20px; /* Add padding as needed */
+    border-radius: 8px; /* Round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Optional: Add styles for the backdrop (overlay) */
+.radix-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 999; /* Ensure it appears behind the content */
+}
